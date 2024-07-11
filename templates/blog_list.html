@@ -1,0 +1,6 @@
+holaa
+<a href="{% url 'blog:Create' %}"">Crea un blog</a>
+<br>
+{% for post in posts %}
+<a href="{% url 'blog:Detail' post.id %}">{{post.title}}</a>
+{%endfor%}
